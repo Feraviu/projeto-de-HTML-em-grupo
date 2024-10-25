@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God of War II - PIXEL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <section id="home" class="hero">
+            <h1 class="amarelo">God of War II</h1>
+            <p class="amarelo">A sequência épica da saga de Kratos</p>
+        </section>
+      
+  <a href="index.html" class="btn-voltar">Voltar</a>
+      
+        <section id="produtos" class="produtos">
+            <h2 class="amarelo">Sobre o jogo</h2>
+            <p class="amarelo">God of War II continua a história de Kratos enquanto ele busca vingança contra os deuses do Olimpo.</p>
+            <div class="produtos-grid">
+                <div class="cartao">
+                    <img src="https://th.bing.com/th/id/R.a9220d9067051bb80696bbe48053a955?rik=QVF4C9WzEN6APQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-VQH1XK41xg0%2fUMJcPL6vR6I%2fAAAAAAAAAqo%2fb4So6MzeFRk%2fs1600%2fgodofwar2.jpg&ehk=vKz77B08WjpOmHXbRcZXbPQln3mT7NN7OXjXTwqTfII%3d&risl=&pid=ImgRaw&r=0" alt="God of War II">
+                    <h3>God of War II</h3>
+                    <p>Plataforma: PlayStation 2</p>
+                    <p>Data de Lançamento: 2007</p>
+                </div>
+              
+        </section>
+          <div class="blocotexto">
+          <h2 class= "amarelo">História do jogo:</h2>
+          <p class= "amarelo">Em "God of War II", Kratos, o ex-Deus da Guerra, busca vingança contra os deuses do Olimpo após ter sido traído por Zeus. O jogo começa com Kratos liderando um exército contra os titãs, mas, ao ser atacado por Zeus, ele perde seus poderes e é lançado ao submundo, com isso ele sente uma fúria tremenda e vai atrás de vingança contra Zeus.</p></div>
+       
+    </main>
+ <button id="nextButton" class="btn-voltar">Next</button>
+      <script>
+    const texts = [
+        {
+            title: "História do jogo:",
+            content: "Em 'God of War II', Kratos, o ex-Deus da Guerra, busca vingança contra os deuses do Olimpo após ter sido traído por Zeus. O jogo começa com Kratos liderando um exército contra os titãs, mas, ao ser atacado por Zeus, ele perde seus poderes e é lançado ao submundo."
+        },
+        {
+            title: "Personagens principais:",
+            content: "Kratos, Atena, Zeus e outras figuras mitológicas desempenham papéis cruciais na narrativa, cada um com sua própria motivação e conflito."
+        },
+        { 
+         title: "Empresa:",
+         content: "Desenvolvido pela Santa Monica Studio, uma divisão da Sony Interactive Entertainment. Fundada em 1999, a Santa Monica Studio se destacou por seu foco em criar jogos de alta qualidade, especialmente para consoles PlayStation. O estúdio ganhou reconhecimento mundial com a franquia God of War, que estreou em 2005 e rapidamente se tornou um dos pilares da plataforma."
+       },
+ ];
+
+    let currentIndex = 0;
+
+    document.getElementById('nextButton').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % texts.length; // Loop pelos textos
+        document.querySelector('.blocotexto h2').innerText = texts[currentIndex].title;
+        document.querySelector('.blocotexto p').innerText = texts[currentIndex].content;
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2024 PIXEL. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
