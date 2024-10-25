@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.info-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+header {
+    background-color: #ffcc00;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.blocotexto {
+    border: 5px solid purple; /* Bordas roxas */
+    background-color: #7d043b; /* Fundo cinza */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-top: 20px; /* Espaçamento acima do bloco */
+}
+
+
+.hero {
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/028/743/180/large/jose-luis-gomez-katanazeroarreglao.jpg?1595373099");
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: 40% -99%;
+}
+
+.verde {
+    color: green;
+}
+
+.amarelo {
+    color: white;
+}
+
+.produtos {
+    padding: 80px 20px;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cartao {
+    background-color: #b4045c;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+    overflow: hidden;
+}
+
+.cartao img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.cartao:hover {
+    transform: scale(1.05);
+}
+
+.btn-voltar {
+    display: inline-block; /* Para que o botão tenha tamanho definido */
+    text-align: center;
+    padding: 15px 30px; /* Aumentar o padding para um botão mais confortável */
+    background-color: #7d043b; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s; /* Efeito de transição */
+    margin-top: 20px; /* Espaço acima do botão */
+}
+
+.btn-voltar:hover {
+    background-color: #9b0a47; /* Cor ao passar o mouse */
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
